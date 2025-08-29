@@ -8,7 +8,9 @@ def add_task(task):
     tasks.append(task)
 
 # Step 3: View tasks
-
+def view_tasks():
+    for i, task in enumerate(tasks, start=1):
+        print(f"{i}, {task}")
 # Step 4: Delete a task
 
 
