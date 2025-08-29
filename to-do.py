@@ -11,7 +11,11 @@ def add_task(task):
 def view_tasks():
     for i, task in enumerate(tasks, start=1):
         print(f"{i}, {task}")
+
 # Step 4: Delete a task
+    print(tasks)
+    tasks.pop(0)
+    print(tasks)
 
 
 # Step 5: Mark task complete
