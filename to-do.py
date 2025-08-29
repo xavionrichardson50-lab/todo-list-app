@@ -13,13 +13,13 @@ def view_tasks():
         print(f"{i}, {task}")
 
 # Step 4: Delete a task
-    print(tasks)
-    tasks.pop(0)
-    print(tasks)
-
+def delete_tasks(task):
+    task = tasks.pop(task)
+    print(f"Deleted: {task}")
 
 # Step 5: Mark task complete
-
+def mark_complete(mark):
+    print(f"Completed:{mark}")
 
 # Step 6: Save/load tasks (extra stretch for today)
 
@@ -32,3 +32,4 @@ if __name__ == "__main__":
     mark_complete(0)
     view_tasks()
     save_tasks()
+    delete_tasks(0)
